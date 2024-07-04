@@ -2,6 +2,7 @@
 "stm32adc_equivalent_sampling\startup_stm32g474xx.o"
 "stm32adc_equivalent_sampling\main.o"
 "stm32adc_equivalent_sampling\gpio.o"
+"stm32adc_equivalent_sampling\tim.o"
 "stm32adc_equivalent_sampling\stm32g4xx_it.o"
 "stm32adc_equivalent_sampling\stm32g4xx_hal_msp.o"
 "stm32adc_equivalent_sampling\stm32g4xx_hal_tim.o"
@@ -21,6 +22,7 @@
 "stm32adc_equivalent_sampling\stm32g4xx_hal_cortex.o"
 "stm32adc_equivalent_sampling\system_stm32g4xx.o"
 "stm32adc_equivalent_sampling\led.o"
+"stm32adc_equivalent_sampling\interrupt.o"
 --strict --scatter "STM32ADC_Equivalent_Sampling\STM32ADC_Equivalent_Sampling.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

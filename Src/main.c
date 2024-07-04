@@ -18,7 +18,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "tim.h"
 #include "gpio.h"
+#include "interrupt.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -85,8 +87,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_TIM_Base_Start_IT(&htim3); // 开启（来自TIM3的）中断
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -96,10 +99,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	    LED_light();
-	  HAL_Delay(500);
-	  LED_init();
-	  HAL_Delay(500);
+	  //   LED_light();
+	  // HAL_Delay(500);
+	  // LED_init();
+	  // HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
