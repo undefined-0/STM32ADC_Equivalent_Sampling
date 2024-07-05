@@ -21,6 +21,13 @@ stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driv
 stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h
 stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h
 stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h
+stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h
+stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h
+stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc_ex.h
+stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_comp.h
+stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h
+stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dac.h
+stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dac_ex.h
 stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h
 stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h
 stm32adc_equivalent_sampling\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h

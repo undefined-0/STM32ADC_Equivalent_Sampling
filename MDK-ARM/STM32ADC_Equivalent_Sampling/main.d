@@ -22,6 +22,13 @@ stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4
 stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h
 stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h
 stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h
+stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h
+stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h
+stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc_ex.h
+stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_comp.h
+stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h
+stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dac.h
+stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dac_ex.h
 stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h
 stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h
 stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h
@@ -30,7 +37,10 @@ stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4
 stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
 stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
 stm32adc_equivalent_sampling\main.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
+stm32adc_equivalent_sampling\main.o: ../Inc/adc.h
+stm32adc_equivalent_sampling\main.o: ../Inc/comp.h
+stm32adc_equivalent_sampling\main.o: ../Inc/dac.h
 stm32adc_equivalent_sampling\main.o: ../Inc/tim.h
 stm32adc_equivalent_sampling\main.o: ../Inc/gpio.h
-stm32adc_equivalent_sampling\main.o: ../bsp/interrupt.h
 stm32adc_equivalent_sampling\main.o: ../bsp/LED.h
+stm32adc_equivalent_sampling\main.o: ../bsp/my_adc.h
