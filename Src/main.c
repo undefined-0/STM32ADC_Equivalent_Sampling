@@ -22,6 +22,7 @@
 #include "comp.h"
 #include "dac.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -95,6 +96,7 @@ int main(void)
   MX_ADC1_Init();
   MX_COMP1_Init();
   MX_DAC1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim3); // 开启（来自TIM3的）中断
   float ext_vp = 1.0;
@@ -111,6 +113,7 @@ int main(void)
 	  // HAL_Delay(500);
 	  // LED_init();
 	  // HAL_Delay(500);
+	  HAL_UART_Transmit(&huart1, "hello\n", 10, 10);
   }
   /* USER CODE END 3 */
 }

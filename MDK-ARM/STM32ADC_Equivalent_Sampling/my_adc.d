@@ -38,3 +38,5 @@ stm32adc_equivalent_sampling\my_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32
 stm32adc_equivalent_sampling\my_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
 stm32adc_equivalent_sampling\my_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
 stm32adc_equivalent_sampling\my_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
+stm32adc_equivalent_sampling\my_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h
+stm32adc_equivalent_sampling\my_adc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
