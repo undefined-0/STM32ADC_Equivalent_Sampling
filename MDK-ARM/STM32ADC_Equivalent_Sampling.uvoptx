@@ -153,15 +153,10 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ext_vp</ItemText>
-        </Ww>
-        <Ww>
-          <count>1</count>
-          <WinNumber>1</WinNumber>
           <ItemText>adc_value</ItemText>
         </Ww>
         <Ww>
-          <count>2</count>
+          <count>1</count>
           <WinNumber>1</WinNumber>
           <ItemText>main_adc_value</ItemText>
         </Ww>
