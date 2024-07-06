@@ -158,7 +158,7 @@
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>main_adc_value</ItemText>
+          <ItemText>adc_array</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>
