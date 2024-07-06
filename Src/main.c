@@ -29,6 +29,7 @@
 /* USER CODE BEGIN Includes */
 #include "LED.h"
 #include "my_adc.h"
+#include "interrupt.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,7 +100,8 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim3); // 开启（来自TIM3的）中断
-  float ext_vp = 1.0;
+  //float ext_vp = 1.0;
+  uint8_t main_adc_value;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -113,7 +115,11 @@ int main(void)
 	  // HAL_Delay(500);
 	  // LED_init();
 	  // HAL_Delay(500);
-	  HAL_UART_Transmit(&huart1, "hello\n", 10, 10);
+	  //HAL_UART_Transmit(&huart1, "hello\n", 10, 10);
+	  main_adc_value = getADC(&hadc1);
+	  uint8_t* adc_value_ptr = &main_adc_value;
+	  HAL_UART_Transmit(&huart1, adc_value_ptr, 10, 10);
+	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }

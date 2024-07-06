@@ -47,3 +47,4 @@ stm32adc_equivalent_sampling\main.o: ../Inc/usart.h
 stm32adc_equivalent_sampling\main.o: ../Inc/gpio.h
 stm32adc_equivalent_sampling\main.o: ../bsp/LED.h
 stm32adc_equivalent_sampling\main.o: ../bsp/my_adc.h
+stm32adc_equivalent_sampling\main.o: ../bsp/interrupt.h
