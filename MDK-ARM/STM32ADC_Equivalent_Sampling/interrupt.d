@@ -40,3 +40,6 @@ stm32adc_equivalent_sampling\interrupt.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/st
 stm32adc_equivalent_sampling\interrupt.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
 stm32adc_equivalent_sampling\interrupt.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h
 stm32adc_equivalent_sampling\interrupt.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
+stm32adc_equivalent_sampling\interrupt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32adc_equivalent_sampling\interrupt.o: ../Inc/usart.h
+stm32adc_equivalent_sampling\interrupt.o: ../Inc/adc.h

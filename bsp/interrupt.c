@@ -1,5 +1,9 @@
 #include "interrupt.h"
 
+float main_adc_value;
+uint8_t adc_array[7];  
+extern float getADC(ADC_HandleTypeDef *hadc);
+
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) // ÈÎºÎÒ»¸ö¶¨Ê±Æ÷ÖÐ¶Ï¶¼»áÀ´µ½´Ëº¯Êý
 
 {
@@ -7,6 +11,13 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) // ÈÎºÎÒ»¸ö¶¨Ê±Æ÷ÖÐ¶
 		{
 			HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
 		}
-		//TIM3->PSC=psc;£¨ÈçºÎ¶¯Ì¬¸Ä±ä²ÉÑù¼ä¸ô£©
 		
+		if(htim->Instance == TIM4) // ÖÐ¶ÏÀ´×ÔTIM4
+		{
+		main_adc_value = getADC(&hadc1);
+		sprintf(adc_array,"%.4f",main_adc_value);
+		HAL_UART_Transmit(&huart1,adc_array, 7, 10);
+		HAL_UART_Transmit(&huart1,(uint8_t*)"\n", 1, 10);
+		}
+		//TIM3->PSC=psc;£¨ÈçºÎ¶¯Ì¬¸Ä±ä²ÉÑù¼ä¸ô£©
 }

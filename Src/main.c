@@ -99,14 +99,10 @@ int main(void)
   MX_COMP1_Init();
   MX_DAC1_Init();
   MX_USART1_UART_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim3); // 开启（来自TIM3的）中断
-  //float ext_vp = 1.0;
-  //volatile 
-  volatile float main_adc_value;
-  //volatile uint8_t int_main_adc_value;
-  //volatile uint8_t a,b,c,d,e;
-  uint8_t adc_array[7];  
+  HAL_TIM_Base_Start_IT(&htim4); // 开启（来自TIM4的）中断
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -116,15 +112,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  //   LED_light();
-	  // HAL_Delay(500);
-	  // LED_init();
-	  // HAL_Delay(500);
-	  //HAL_UART_Transmit(&huart1, "hello\n", 6, 10);
-	  main_adc_value = getADC(&hadc1);
-    sprintf(adc_array,"%.3f",main_adc_value);
-	  HAL_UART_Transmit(&huart1,adc_array, 7, 10);
-	  HAL_UART_Transmit(&huart1,(uint8_t*)"\n", 1, 10);
+
   }
   /* USER CODE END 3 */
 }
